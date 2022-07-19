@@ -1,5 +1,6 @@
 val kotlinWrappersVersion = "18.2.0-pre.357"
 val emotionWrappersVersion = "11.9.3-pre.357"
+val kotlinxVersion = "0.7.5"
 
 plugins {
     id("org.springframework.boot") version "2.7.1" apply false
@@ -52,7 +53,7 @@ kotlin {
         }
         val backendMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-html:0.7.5")
+                implementation("org.jetbrains.kotlinx:kotlinx-html:$kotlinxVersion")
                 implementation("org.springframework.boot:spring-boot-starter-web")
 
 
